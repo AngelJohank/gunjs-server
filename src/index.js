@@ -6,7 +6,7 @@ const port = process.env.PORT || 3000;
 
 app.use(Gun.serve);
 
-const server = app.listen(port, () => console.log("Server on port", port));
+const server = app.listen(port);
 
 Gun({ web: server });
 
