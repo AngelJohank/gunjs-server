@@ -8,4 +8,6 @@ app.use(Gun.serve);
 
 const server = app.listen(port, () => console.log("Server on port", port));
 
-Gun({ web: server, radisk: false });
+Gun({ web: server });
+
+// radisk: false for deleting gundb data from server
